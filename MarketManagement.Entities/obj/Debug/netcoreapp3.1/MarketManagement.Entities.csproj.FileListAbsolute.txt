@@ -1,0 +1,9 @@
+C:\Projects\MarketManagement\MarketManagement.Entities\bin\Debug\netcoreapp3.1\MarketManagement.Entities.deps.json
+C:\Projects\MarketManagement\MarketManagement.Entities\bin\Debug\netcoreapp3.1\MarketManagement.Entities.dll
+C:\Projects\MarketManagement\MarketManagement.Entities\bin\Debug\netcoreapp3.1\MarketManagement.Entities.pdb
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.csprojAssemblyReference.cache
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.AssemblyInfoInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.AssemblyInfo.cs
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.csproj.CoreCompileInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.dll
+C:\Projects\MarketManagement\MarketManagement.Entities\obj\Debug\netcoreapp3.1\MarketManagement.Entities.pdb

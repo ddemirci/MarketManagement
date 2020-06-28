@@ -1,0 +1,12 @@
+C:\Projects\MarketManagement\MarketManagement.Context\bin\Debug\netcoreapp3.1\MarketManagement.Context.deps.json
+C:\Projects\MarketManagement\MarketManagement.Context\bin\Debug\netcoreapp3.1\MarketManagement.Context.dll
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.csprojAssemblyReference.cache
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.AssemblyInfoInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.AssemblyInfo.cs
+C:\Projects\MarketManagement\MarketManagement.Context\bin\Debug\netcoreapp3.1\MarketManagement.Context.pdb
+C:\Projects\MarketManagement\MarketManagement.Context\bin\Debug\netcoreapp3.1\MarketManagement.Entities.dll
+C:\Projects\MarketManagement\MarketManagement.Context\bin\Debug\netcoreapp3.1\MarketManagement.Entities.pdb
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.csproj.CoreCompileInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.csproj.CopyComplete
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.dll
+C:\Projects\MarketManagement\MarketManagement.Context\obj\Debug\netcoreapp3.1\MarketManagement.Context.pdb
