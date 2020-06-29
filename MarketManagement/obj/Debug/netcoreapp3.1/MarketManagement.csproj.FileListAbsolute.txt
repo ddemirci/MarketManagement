@@ -66,3 +66,7 @@ C:\Projects\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\Swashbuckl
 C:\Projects\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.csproj.CoreCompileInputs.cache
 C:\Projects\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.xml
+C:\Projects\MarketManagement\MarketManagement\obj\Debug\netcoreapp3.1\MarketManagement.xml
+C:\Projects\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.Logger.dll
+C:\Projects\MarketManagement\MarketManagement\bin\Debug\netcoreapp3.1\MarketManagement.Logger.pdb

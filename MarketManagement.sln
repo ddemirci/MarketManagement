@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketManagement.Repositori
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketManagement.Context", "MarketManagement.Context\MarketManagement.Context.csproj", "{C1339855-5334-4E65-8F74-C9046F5AD78C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketManagement.Service", "MarketManagement.Service\MarketManagement.Service.csproj", "{F719F9E0-81BB-4BC1-A69D-0DF108A281F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketManagement.Service", "MarketManagement.Service\MarketManagement.Service.csproj", "{F719F9E0-81BB-4BC1-A69D-0DF108A281F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketManagement.Logger", "MarketManagement.Logger\MarketManagement.Logger.csproj", "{4A030CB2-A817-43C3-889F-786E351B911E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F719F9E0-81BB-4BC1-A69D-0DF108A281F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F719F9E0-81BB-4BC1-A69D-0DF108A281F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F719F9E0-81BB-4BC1-A69D-0DF108A281F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A030CB2-A817-43C3-889F-786E351B911E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A030CB2-A817-43C3-889F-786E351B911E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A030CB2-A817-43C3-889F-786E351B911E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A030CB2-A817-43C3-889F-786E351B911E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

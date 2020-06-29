@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarketManagement</name>
+    </assembly>
+    <members>
+        <member name="M:MarketManagement.Controllers.LoginController.SignIn(MarketManagement.Entities.User)">
+            <summary>
+            User Sign In
+            </summary>
+            <remarks>
+            
+            Note that user must be signed up first.   
+            
+                POST /user/signin
+                {
+                    "phoneNumber": "+905555555555",
+                    "password": "admin"
+                }
+            
+            </remarks>
+            <param name="signIn"></param>
+            <returns></returns>
+            <response code="200"> Signed in a user</response>
+            <response code="404"> User not found or wrong credentials</response> 
+        </member>
+        <member name="M:MarketManagement.Controllers.LoginController.SignUp(MarketManagement.Entities.User)">
+            <summary>
+            Sign up a user
+            </summary>
+            <remarks>
+            Sample Request:
+                
+                POST /user/signup
+                {
+                    "phoneNumber": "+905555555555",
+                    "password": "admin"
+                }
+            
+            </remarks>
+            <param name="signUp"></param>
+            <returns></returns>
+            <response code="201"> Signep up a user</response>
+            <response code="400"> Bad Request</response> 
+            POST: api/user/signup
+        </member>
+        <member name="M:MarketManagement.Controllers.LoginController.GetAllUsers">
+            <summary>
+            Retrieve all users
+            </summary>
+            <returns></returns>
+            <response code="200"> Users have been retrieved</response>
+            <response code="404"> No user was found</response> 
+        </member>
+        <member name="M:MarketManagement.Controllers.ProductController.GetProducts">
+            <summary>
+            Retrieve all products
+            </summary>
+            <returns>List of all products</returns>
+            <response code="200"> Products have been retrieved</response>
+            <response code="404"> No product was found</response> 
+        </member>
+        <member name="M:MarketManagement.Controllers.ProductController.GetProduct(System.String)">
+            <summary>
+            Retrieve specific product
+            </summary>
+            <param name="id"></param>
+            <response code="200"> Specified product has been retrieved</response>
+            <response code="404"> Specified product was not found</response> 
+        </member>
+        <member name="M:MarketManagement.Controllers.ProductController.AddProduct(MarketManagement.Entities.Product)">
+            <summary>
+            Add a product
+            </summary>
+            <remarks>
+            Sample request:
+                
+                POST /Products
+                {
+                    "id": "8",
+                    "name": "Table",
+                    "price": 60,
+                    "currency": "TRY"
+                }
+                
+            </remarks>
+            <param name="product"></param>
+            <response code="200"> Specified product has been created successfully</response>
+            <response code="400"> Bad Request</response> 
+        </member>
+        <member name="M:MarketManagement.Controllers.ProductController.UpdateProduct(MarketManagement.Entities.Product)">
+            <summary>
+            Update existed product
+            </summary>
+            <remarks>
+            Note that given id must be existed.
+            Sample request:
+            
+                 PUT /Products
+                 {
+                    "id": "8",
+                    "name": "Table",
+                    "price": 60,
+                    "currency": "TRY"
+                 }
+            
+            </remarks>
+            <param name="product"></param>
+            <returns>
+            <response code="200"> Specified product has been updated successfully</response>
+            <response code="404"> Specified product was not found</response> 
+            </returns>
+        </member>
+        <member name="M:MarketManagement.Controllers.ProductController.DeleteProduct(System.String)">
+            <summary>
+            Delete specified product.
+            </summary>
+            <param name="id"></param>
+            <response code="200"> Specified product has been deleted successfully</response>
+            <response code="404"> Specified product was not found</response> 
+        </member>
+    </members>
+</doc>

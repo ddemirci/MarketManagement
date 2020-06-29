@@ -23,6 +23,9 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.ComponentModel;
 using Swashbuckle.AspNetCore.Filters;
+using System.Reflection;
+using System.IO;
+using MarketManagement.Logger;
 
 namespace MarketManagement
 {
@@ -65,6 +68,10 @@ namespace MarketManagement
                 });
 
                 c.OperationFilter<SecurityRequirementsOperationFilter>();
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
 
 
@@ -91,12 +98,15 @@ namespace MarketManagement
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,
+            ILoggerFactory log)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            log.AddProvider(new FileLogProvider());
 
             app.UseAuthentication();
             app.UseHttpsRedirection();

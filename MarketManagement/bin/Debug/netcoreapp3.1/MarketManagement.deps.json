@@ -17,7 +17,7 @@
     "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
-    "xmlDoc": false,
+    "xmlDoc": true,
     "debugType": "portable"
   },
   "targets": {
@@ -26,6 +26,7 @@
         "dependencies": {
           "MarketManagement.Context": "1.0.0",
           "MarketManagement.Entities": "1.0.0",
+          "MarketManagement.Logger": "1.0.0",
           "MarketManagement.Repositories": "1.0.0",
           "MarketManagement.Service": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.5",
@@ -1126,6 +1127,17 @@
         },
         "compile": {
           "MarketManagement.Entities.dll": {}
+        }
+      },
+      "MarketManagement.Logger/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.5"
+        },
+        "runtime": {
+          "MarketManagement.Logger.dll": {}
+        },
+        "compile": {
+          "MarketManagement.Logger.dll": {}
         }
       },
       "MarketManagement.Repositories/1.0.0": {
@@ -3298,6 +3310,11 @@
       "sha512": ""
     },
     "MarketManagement.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MarketManagement.Logger/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6sUcWubMp4YmamWDo4aonunp+2gY7cTI3yluOitGOI7seVC5OC2cmLBS2O8pZoQArT0ykEmrhn5rYQoEi+oGSA==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\MarketManagement\\MarketManagement.Logger\\MarketManagement.Logger.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Doruk\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.5\\microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

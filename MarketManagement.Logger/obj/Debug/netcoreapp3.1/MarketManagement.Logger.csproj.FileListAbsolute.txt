@@ -1,0 +1,9 @@
+C:\Projects\MarketManagement\MarketManagement.Logger\bin\Debug\netcoreapp3.1\MarketManagement.Logger.deps.json
+C:\Projects\MarketManagement\MarketManagement.Logger\bin\Debug\netcoreapp3.1\MarketManagement.Logger.dll
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.csprojAssemblyReference.cache
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.AssemblyInfoInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.AssemblyInfo.cs
+C:\Projects\MarketManagement\MarketManagement.Logger\bin\Debug\netcoreapp3.1\MarketManagement.Logger.pdb
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.csproj.CoreCompileInputs.cache
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.dll
+C:\Projects\MarketManagement\MarketManagement.Logger\obj\Debug\netcoreapp3.1\MarketManagement.Logger.pdb

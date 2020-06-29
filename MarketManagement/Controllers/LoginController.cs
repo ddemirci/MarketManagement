@@ -33,11 +33,26 @@ namespace MarketManagement.Controllers
         /// <summary>
         /// User Sign In
         /// </summary>
+        /// <remarks>
+        /// 
+        /// Note that user must be signed up first.   
+        /// 
+        ///     POST /user/signin
+        ///     {
+        ///         "phoneNumber": "+905555555555",
+        ///         "password": "admin"
+        ///     }
+        /// 
+        /// </remarks>
         /// <param name="signIn"></param>
         /// <returns></returns>
+        /// <response code="200"> Signed in a user</response>
+        /// <response code="404"> User not found or wrong credentials</response> 
+        // POST: api/user/signin
         [AllowAnonymous]
         [HttpPost("signin")]
-        // POST: api/user/login
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult SignIn([FromBody] User signIn)
         {
             var authResponse = AuthenticateUser(signIn).Result;
@@ -56,10 +71,25 @@ namespace MarketManagement.Controllers
         /// <summary>
         /// Sign up a user
         /// </summary>
+        /// <remarks>
+        /// Sample Request:
+        ///     
+        ///     POST /user/signup
+        ///     {
+        ///         "phoneNumber": "+905555555555",
+        ///         "password": "admin"
+        ///     }
+        /// 
+        /// </remarks>
         /// <param name="signUp"></param>
         /// <returns></returns>
+        /// <response code="201"> Signep up a user</response>
+        /// <response code="400"> Bad Request</response> 
+        /// POST: api/user/signup
         [AllowAnonymous]
         [HttpPost("signup")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> SignUp([FromBody] User signUp)
         {
             var result = await _userService.Create(signUp);
@@ -69,14 +99,18 @@ namespace MarketManagement.Controllers
                 return BadRequest();
         }
 
-        
+
         /// <summary>
-        /// Returns all users defined
+        /// Retrieve all users
         /// </summary>
         /// <returns></returns>
+        /// <response code="200"> Users have been retrieved</response>
+        /// <response code="404"> No user was found</response> 
         // GET: api/users
         [Authorize]
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetAllUsers()
         {
             var users = await _userService.GetAll();

@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 using System;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace MarketManagement.Repositories
 {
@@ -13,15 +14,19 @@ namespace MarketManagement.Repositories
     {
         private readonly IServiceScope _scope;
         private readonly ProductDbContext _databaseContext;
+        private readonly ILogger<ProductRepository> _logger;
 
-        public ProductRepository(IServiceProvider services)
+        public ProductRepository(IServiceProvider services, 
+            ILogger<ProductRepository> logger)
         {
             _scope = services.CreateScope();
             _databaseContext = _scope.ServiceProvider.GetRequiredService<ProductDbContext>();
+            _logger = logger;
         }
 
         public async Task<bool> Create(Product entity)
         {
+            _logger.LogInformation("Create method has been called in Repository layer");
             _databaseContext.Products.Add(entity);
 
             var numberOfItemsCreated = await _databaseContext.SaveChangesAsync();

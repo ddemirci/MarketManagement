@@ -987,6 +987,19 @@
           "bin/placeholder/MarketManagement.Entities.dll": {}
         }
       },
+      "MarketManagement.Logger/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.5"
+        },
+        "compile": {
+          "bin/placeholder/MarketManagement.Logger.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MarketManagement.Logger.dll": {}
+        }
+      },
       "MarketManagement.Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -3646,6 +3659,11 @@
       "path": "../MarketManagement.Entities/MarketManagement.Entities.csproj",
       "msbuildProject": "../MarketManagement.Entities/MarketManagement.Entities.csproj"
     },
+    "MarketManagement.Logger/1.0.0": {
+      "type": "project",
+      "path": "../MarketManagement.Logger/MarketManagement.Logger.csproj",
+      "msbuildProject": "../MarketManagement.Logger/MarketManagement.Logger.csproj"
+    },
     "MarketManagement.Repositories/1.0.0": {
       "type": "project",
       "path": "../MarketManagement.Repositories/MarketManagement.Repositories.csproj",
@@ -3661,6 +3679,7 @@
     ".NETCoreApp,Version=v3.1": [
       "MarketManagement.Context >= 1.0.0",
       "MarketManagement.Entities >= 1.0.0",
+      "MarketManagement.Logger >= 1.0.0",
       "MarketManagement.Repositories >= 1.0.0",
       "MarketManagement.Service >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.5",
@@ -3706,6 +3725,9 @@
             },
             "C:\\Projects\\MarketManagement\\MarketManagement.Entities\\MarketManagement.Entities.csproj": {
               "projectPath": "C:\\Projects\\MarketManagement\\MarketManagement.Entities\\MarketManagement.Entities.csproj"
+            },
+            "C:\\Projects\\MarketManagement\\MarketManagement.Logger\\MarketManagement.Logger.csproj": {
+              "projectPath": "C:\\Projects\\MarketManagement\\MarketManagement.Logger\\MarketManagement.Logger.csproj"
             },
             "C:\\Projects\\MarketManagement\\MarketManagement.Repositories\\MarketManagement.Repositories.csproj": {
               "projectPath": "C:\\Projects\\MarketManagement\\MarketManagement.Repositories\\MarketManagement.Repositories.csproj"
